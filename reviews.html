@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic settings for the page -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameHub</title>
+  
+  <link rel="stylesheet" href="style.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header>
+    <a href="index.html" class="logo">GameHub</a>
+
+    <!-- Navigation Menu -->
+    <ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="games.html">Games</a></li>
+      <li><a href="reviews.html" class="active">Reviews</a></li> <!-- Make sure the link points to reviews.html -->
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <!-- Search Bar -->
+    <div class="action">
+      <div class="searchBx">
+        <a href="#"><i class='bx bx-search'></i></a>
+        <input type="text" placeholder="Search Games">
+      </div>
+    </div>
+
+    <!-- Mobile Menu Toggle -->
+    <div class="toggleMenu" onclick="toggleMenu();"></div>
+  </header>
+
+  <!-- Game Reviews Section -->
+  <div class="reviews" id="reviews">
+    <h2>Latest Game Reviews</h2>
+    <!-- Review boxes container -->
+    <div class="boxBx">
+
+      <!-- Each box shows a game review -->
+      <div class="box">
+        <img src="review1.jpg" alt="Game 1">
+        <div class="content">
+          <h4><span>9.2</span> / 10 - Elden Ring</h4>
+          <p>Stunning visuals, challenging combat, and rich lore make this a must-play RPG experience for hardcore gamers.</p>
+          <div class="btn">
+            <a href="#" class="watch">Read More</a>
+            <a href="#" class="join">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- More game review cards -->
+      <div class="box">
+        <img src="review2.jpg" alt="Game 2">
+        <div class="content">
+          <h4><span>8.7</span> / 10 - Spider-Man 2</h4>
+          <p>Fast-paced action and emotional storytelling deliver an outstanding superhero adventure on PS5.</p>
+          <div class="btn">
+            <a href="#" class="watch">Read More</a>
+            <a href="#" class="join">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Repeat for other games -->
+      <div class="box">
+        <img src="review3.jpg" alt="Game 3">
+        <div class="content">
+          <h4><span>9.5</span> / 10 - God of War: Ragnarok</h4>
+          <p>An epic continuation of Kratos’ saga with breathtaking visuals, brutal combat, and emotional depth.</p>
+          <div class="btn">
+            <a href="#" class="watch">Read More</a>
+            <a href="#" class="join">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="review4.jpg" alt="Game 4">
+        <div class="content">
+          <h4><span>8.0</span> / 10 - Call of Duty: MW III</h4>
+          <p>Classic CoD multiplayer thrills, though the campaign feels a bit too familiar. A solid choice for fans.</p>
+          <div class="btn">
+            <a href="#" class="watch">Read More</a>
+            <a href="#" class="join">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="review5.jpg" alt="Game 5">
+        <div class="content">
+          <h4><span>8.9</span> / 10 - The Legend of Zelda: TOTK</h4>
+          <p>Expands on Breath of the Wild in brilliant ways — deep exploration and creative freedom at its best.</p>
+          <div class="btn">
+            <a href="#" class="watch">Read More</a>
+            <a href="#" class="join">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="review6.jpg" alt="Game 6">
+        <div class="content">
+          <h4><span>7.8</span> / 10 - Assassin's Creed Origins</h4>
+          <p>Back to stealthy roots in a beautiful setting. While not groundbreaking, it’s a nostalgic trip done right.</p>
+          <div class="btn">
+            <a href="#" class="watch">Read More</a>
+            <a href="#" class="join">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials" data-aos="fade-up">
+    <h2 class="sushi__title center-text">💬 What The Players Are Saying</h2>
+
+    <!-- Scrolling testimonials from users -->
+    <div class="testimonials__slider-wrapper">
+      <div class="testimonials__wrapper">
+
+        <!-- Each testimonial card contains user feedback -->
+        <div class="testimonial-card">
+          <p>"Best game I’ve played this year!"</p>
+          <h4>- Alex G.</h4>
+        </div>
+        <div class="testimonial-card">
+          <p>"The graphics blew me away. Amazing work 👏"</p>
+          <h4>- Jamie L.</h4>
+        </div>
+        <div class="testimonial-card">
+          <p>"Feels like I'm part of the game world. Incredible!"</p>
+          <h4>- Nina R.</h4>
+        </div>
+        <div class="testimonial-card">
+          <p>"Multiplayer mode is pure adrenaline!"</p>
+          <h4>- Chris D.</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="info">
+      <!-- Footer logo and copyright -->
+       <a href="#" class="logo">GameHub</a>
+       <p><i class='bx bx-copyright'  ></i> 2025 All Rights Reserved</p>
+       <!-- Social Media Icons -->
+       <ul>
+           <li><a href="#"><i class='bx bxl-facebook' ></i></a></li>
+           <li><a href="#"><i class='bx bxl-instagram' ></i></a></li>
+           <li><a href="#"><i class='bx bxl-twitter' ></i></a></li>
+           <li><a href="#"><i class='bx bxl-youtube' ></i></a></li>
+       </ul>
+    </div>
+  </footer>
+
+  <!-- JavaScript Section -->
+  <script>
+    // Make header sticky when scrolling
+    window.addEventListener('scroll', function() {
+      var header = document.querySelector('header');
+      header.classList.toggle('sticky', window.scrollY > 0);
+    });
+
+    // Toggle mobile menu
+    function toggleMenu() {
+      const toggleMenu = document.querySelector('.toggleMenu');
+      const nav = document.querySelector('.nav');
+      toggleMenu.classList.toggle('active');
+      nav.classList.toggle('active');
+    }
+
+    // Animate elements when scrolling into view
+    window.addEventListener('scroll', function() {
+      var anime = document.querySelectorAll('.animeX');
+
+      for (var s = 0; s < anime.length; s++) {
+        var windowheight = window.innerHeight;
+        var animetop = anime[s].getBoundingClientRect().top;
+        var animepoint = 150;
+
+        if (animetop < windowheight - animepoint) {
+          anime[s].classList.add('active');
+        } else {
+          anime[s].classList.remove('active');
+        }
+      }
+    });
+  </script>
+</body>
+</html>

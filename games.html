@@ -1,0 +1,265 @@
+<html lang="en">
+    <head>
+    <!-- Basic settings for the page -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameHub</title>
+    <!-- Link to external CSS and icons -->
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+
+        <!-- Navigation Header -->
+        <header>
+        <a href="index.html" class="logo">GameHub</a>
+
+        <!-- Navigation Menu -->
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="games.html" class="active">Games</a></li> 
+            <li><a href="reviews.html">Reviews</a></li>          <!-- Reviews-->
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <!-- Search Bar -->
+        <div class="action">
+            <div class="searchBx">
+                <a href="#"><i class='bx bx-search'></i></a>
+                <input type="text" placeholder="Search Games">
+            </div>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <div class="toggleMenu" onclick="toggleMenu();"></div>
+        </header>
+
+         <!-- Games -->
+         <div class="games" id="games">
+            <!-- Title for the games section -->
+            <h2>Popular Games</h2>
+
+            <!-- Title for the games section -->
+            <ul>
+                <li class="list active" data-filter="all">All</li>
+                <li class="list" data-filter="pc">Pc games</li>
+                <li class="list" data-filter="mobile">Mobile games</li>
+            </ul>
+
+            <!-- Container holding all game cards -->
+            <div class="cardBx">
+
+                <!-- Each card below represents a game -->
+                <div class="card" data-item="pc">
+                    <img src="game1.png">
+                    <div class="content">
+                        <h4>Resident Evil 2</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Pricing<br><span>$10</span></p>
+                            <a href="#">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Repeat of similar game cards -->
+                <div class="card" data-item="pc">
+                    <img src="game2.png">
+                    <div class="content">
+                        <h4>Apex Legends</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Pricing<br><span>$10</span></p>
+                            <a href="#">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- More PC game cards... -->
+                <div class="card" data-item="pc">
+                    <img src="game3.png">
+                    <div class="content">
+                        <h4>Grand Theft Auto</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Pricing<br><span>$10</span></p>
+                            <a href="#">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-item="pc">
+                    <img src="game4.png">
+                    <div class="content">
+                        <h4>The Last Of Us Remastered</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Pricing<br><span>$10</span></p>
+                            <a href="#">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card" data-item="pc">
+                    <img src="game5.png">
+                    <div class="content">
+                        <h4>Mortal Combat</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Pricing<br><span>$10</span></p>
+                            <a href="#">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-item="pc">
+                    <img src="game6.png">
+                    <div class="content">
+                        <h4>Uncharted 4</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Pricing<br><span>$10</span></p>
+                            <a href="#">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Some mobile game cards... -->
+                <div class="card" data-item="mobile">
+                    <img src="game7.png">
+                    <div class="content">
+                        <h4>Genshin Impact</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Pricing<br><span>$10</span></p>
+                            <a href="#">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More mobile game cards... -->
+                <div class="card" data-item="mobile">
+                    <img src="game8.png">
+                    <div class="content">
+                        <h4>Call of Duty</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Pricing<br><span>$10</span></p>
+                            <a href="#">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-item="mobile">
+                    <img src="game9.png">
+                    <div class="content">
+                        <h4>Minecraft</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Pricing<br><span>$10</span></p>
+                            <a href="#">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-item="mobile">
+                    <img src="game10.png">
+                    <div class="content">
+                        <h4>PUBG Mobile</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Pricing<br><span>$10</span></p>
+                            <a href="#">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+         <!-- Footer Section -->
+         <footer>
+            <div class="info">
+                <!-- Footer logo and copyright -->
+               <a href="#" class="logo">GameHub</a>
+               <p><i class='bx bx-copyright'  ></i> 2025 All Rights Reserved</p>
+               <!-- Social Media Icons -->
+               <ul>
+                   <li><a href="#"><i class='bx bxl-facebook' ></i></a></li>
+                   <li><a href="#"><i class='bx bxl-instagram' ></i></a></li>
+                   <li><a href="#"><i class='bx bxl-twitter' ></i></a></li>
+                   <li><a href="#"><i class='bx bxl-youtube' ></i></a></li>
+               </ul>
+            </div>
+          </footer>
+
+          <!-- JavaScript Section -->
+          <script>
+
+            // Make header sticky when scrolling
+            window.addEventListener('scroll',function(){
+                var header = document.querySelector('header');
+                header.classList.toggle('sticky',window.scrollY > 0);   
+            });
+
+            
+            // Toggle mobile menu
+            function toggleMenu(){
+                const toggleMenu = document.querySelector('.toggleMenu');
+                const nav = document.querySelector('.nav');
+                toggleMenu.classList.toggle('active')
+                nav.classList.toggle('active')
+            }
+
+            // Filterable Cards Feature
+
+            let list = document.querySelectorAll('.list');
+            let card = document.querySelectorAll('.card');
+            
+            for(let i = 0; i<list.length; i++){
+                list[i].addEventListener('click',function(){
+                    for(let j=0; j<list.length; j++){
+                        list[j].classList.remove('active');
+                    }
+                    this.classList.add('active');
+
+                    let dataFilter = this.getAttribute('data-filter');
+
+                    for( let k=0; k<card.length; k++)
+                    {
+                        card[k].classList.remove('active');
+                        card[k].classList.add('hide');
+
+                        if(card[k].getAttribute('data-item') == dataFilter || dataFilter == 'all'){
+                            card[k].classList.remove('hide');
+                            card[k].classList.add('active');
+                        }
+                    }
+                })
+            }
+
+            // Animate elements when scrolling into view
+            window.addEventListener('scroll',function(){
+                var anime = document.querySelectorAll('.animeX');
+
+                for(var s = 0; s < anime.length; s++){
+                    var windowheight = window.innerHeight;
+                    var animetop = anime[s].getBoundingClientRect().top;
+                    var animepoint = 150;
+
+                    if(animetop < windowheight - animepoint){
+                        anime[s].classList.add('active');
+                    }
+                    else{
+                        anime[s].classList.remove('active'); 
+                    }
+                }
+
+            })
+
+          </script>
+</body>
+</html>
+          
+       
+            

@@ -1,0 +1,128 @@
+<html lang="en">
+    <head>
+    <!-- Basic settings for the page -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameHub</title>
+    <!-- Link to external CSS and icons -->
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+
+        <!-- Navigation Header -->
+        <header>
+        <a href="index.html" class="logo">GameHub</a>
+
+        <!-- Navigation Menu -->
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="reviews.html">Reviews</a></li>          <!-- Reviews-->
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+
+        <!-- Search Bar -->
+        <div class="action">
+            <div class="searchBx">
+                <a href="#"><i class='bx bx-search'></i></a>
+                <input type="text" placeholder="Search Games">
+            </div>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <div class="toggleMenu" onclick="toggleMenu();"></div>
+        </header>
+
+        <!-- Contact -->
+        <div class="contact" id="contact">
+            <!-- Left image -->
+            <img src="contact.jpg">
+
+            <!-- Contact form on the right -->
+            <div class="form">
+                <h1>Contact Us</h1>
+
+                <!-- Name input field -->
+                <div class="inputBx">
+                    <p>Enter Name</p>
+                    <input type="text" placeholder="Full Name">
+                </div>
+
+                <!-- Email input field -->
+                <div class="inputBx">
+                    <p>Enter Email</p>
+                    <input type="text" placeholder="Full Name">
+                </div>
+
+                <!-- Message text area -->
+                <div class="inputBx">
+                    <p>Message</p>
+                    <textarea placeholder="Type here..."></textarea>
+                </div>
+
+                <!-- Submit button -->
+                <div class="inputBx">
+                    <input type="submit" name="Submit">
+                </div>
+            </div>
+          </div>
+
+          <!-- Footer Section -->
+          <footer>
+            <div class="info">
+                <!-- Footer logo and copyright -->
+               <a href="#" class="logo">GameHub</a>
+               <p><i class='bx bx-copyright'  ></i> 2025 All Rights Reserved</p>
+               <!-- Social Media Icons -->
+               <ul>
+                   <li><a href="#"><i class='bx bxl-facebook' ></i></a></li>
+                   <li><a href="#"><i class='bx bxl-instagram' ></i></a></li>
+                   <li><a href="#"><i class='bx bxl-twitter' ></i></a></li>
+                   <li><a href="#"><i class='bx bxl-youtube' ></i></a></li>
+               </ul>
+            </div>
+          </footer>
+
+          <!-- JavaScript Section -->
+          <script>
+            // Make header sticky when scrolling
+            window.addEventListener('scroll',function(){
+                var header = document.querySelector('header');
+                header.classList.toggle('sticky',window.scrollY > 0);   
+            });
+
+            
+            // Toggle mobile menu
+            function toggleMenu(){
+                const toggleMenu = document.querySelector('.toggleMenu');
+                const nav = document.querySelector('.nav');
+                toggleMenu.classList.toggle('active')
+                nav.classList.toggle('active')
+            }
+            
+            
+
+            // Animate elements when scrolling into view
+            window.addEventListener('scroll',function(){
+                var anime = document.querySelectorAll('.animeX');
+
+                for(var s = 0; s < anime.length; s++){
+                    var windowheight = window.innerHeight;
+                    var animetop = anime[s].getBoundingClientRect().top;
+                    var animepoint = 150;
+
+                    if(animetop < windowheight - animepoint){
+                        anime[s].classList.add('active');
+                    }
+                    else{
+                        anime[s].classList.remove('active'); 
+                    }
+                }
+
+            })
+
+          </script>
+</body>
+</html>
